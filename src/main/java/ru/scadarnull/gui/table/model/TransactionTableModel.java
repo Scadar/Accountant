@@ -42,7 +42,7 @@ public class TransactionTableModel extends MainTableModel {
             case DATE -> Format.date(transaction.getDate());
             case ACCOUNT -> transaction.getAccount().getTitle();
             case ARTICLE -> transaction.getArticle().getTitle();
-            case AMOUNT -> transaction.getAmount();
+            case AMOUNT -> Format.amount(transaction.getAmount(), transaction.getAccount().getCurrency());
             case NOTICE -> transaction.getNotice();
             default -> null;
         };

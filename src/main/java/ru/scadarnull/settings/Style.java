@@ -102,5 +102,6 @@ public class Style {
     public static final ImageIcon ICON_PANEL_OVERVIEW = new ImageIcon("images/overview_panel.png");
     public static final ImageIcon ICON_PANEL_ACCOUNTS = new ImageIcon("images/accounts_panel.png");
     public static final ImageIcon ICON_PANEL_ARTICLES = new ImageIcon("images/articles_panel.png");
+    public static final ImageIcon ICON_PANEL_TRANSFERS = new ImageIcon("images/transfers_panel.png");
 
 }

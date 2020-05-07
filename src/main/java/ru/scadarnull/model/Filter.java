@@ -22,6 +22,7 @@ public class Filter {
 
     public Filter(int step){
         this.step = step;
+        setFromTo(new GregorianCalendar());
     }
 
     public void next(){

@@ -134,6 +134,12 @@ final public class Text {
         data.put("ACCOUNTS", "Счета");
         data.put("TITLE", "Название");
         data.put("ARTICLES", "Статьи");
+        data.put("TRANSACTIONS", "Транзакции");
+        data.put("TRANSFERS", "Переводы");
+        data.put("FROM_AMOUNT", "Снято");
+        data.put("TO_AMOUNT", "Зачислено");
+        data.put("FROM_ACCOUNT", "Откуда");
+        data.put("TO_ACCOUNT", "Куда");
 
 
 
