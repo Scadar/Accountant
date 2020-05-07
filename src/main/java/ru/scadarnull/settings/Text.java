@@ -131,6 +131,9 @@ final public class Text {
         data.put("NOTICE", "Примечание");
 
         data.put("LAST_TRANSACTIONS", "Последнии транзакции");
+        data.put("ACCOUNTS", "Счета");
+        data.put("TITLE", "Название");
+        data.put("ARTICLES", "Статьи");
 
 
 

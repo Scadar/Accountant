@@ -1,9 +1,7 @@
 package ru.scadarnull.gui;
 
 import ru.scadarnull.gui.menu.MainMenu;
-import ru.scadarnull.gui.panel.LeftPanel;
-import ru.scadarnull.gui.panel.OverViewPanel;
-import ru.scadarnull.gui.panel.RightPanel;
+import ru.scadarnull.gui.panel.*;
 import ru.scadarnull.gui.toolbar.MainToolBar;
 import ru.scadarnull.settings.Style;
 import ru.scadarnull.settings.Text;
@@ -52,7 +50,7 @@ public class MainFrame extends JFrame implements Refresh{
         leftPanel = new LeftPanel(this);
         add(leftPanel, constraints);
 
-        setRightPanel(new OverViewPanel(this));
+        setRightPanel(new ArticlePanel(this));
 
         pack();
         setLocationRelativeTo(null);
