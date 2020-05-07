@@ -25,12 +25,6 @@ public class TransferTableData extends TableData {
         getColumn(Text.get("TO_AMOUNT")).setCellRenderer(new TableCellAmountRenderer(Style.COLOR_INCOME));
     }
 
-    @Override
-    public void refresh(){
-        super.refresh();
-        init();
-    }
-
     private static class TableCellAmountRenderer extends MainTableCellRenderer {
 
         private final Color color;

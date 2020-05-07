@@ -50,6 +50,7 @@ abstract public class TableData extends JTable implements Refresh {
         if(selectRow != -1 && selectRow < getRowCount()){
             setRowSelectionInterval(selectRow, selectRow);
         }
+        init();
     }
 
     protected void init(){}

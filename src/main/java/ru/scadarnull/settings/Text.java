@@ -140,7 +140,11 @@ final public class Text {
         data.put("TO_AMOUNT", "Зачислено");
         data.put("FROM_ACCOUNT", "Откуда");
         data.put("TO_ACCOUNT", "Куда");
-
+        data.put("CURRENCIES", "Валюты");
+        data.put("CODE", "Код");
+        data.put("RATE", "Курс");
+        data.put("ON", "Включено");
+        data.put("BASE", "Базовая");
 
 
         data.put("DIALOG_ABOUT_TITLE", "О программе");
