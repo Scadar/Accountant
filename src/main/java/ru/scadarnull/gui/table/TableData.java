@@ -2,6 +2,7 @@ package ru.scadarnull.gui.table;
 
 import ru.scadarnull.gui.MainFrame;
 import ru.scadarnull.gui.Refresh;
+import ru.scadarnull.gui.menu.TablePopUpMenu;
 import ru.scadarnull.gui.table.model.MainTableModel;
 import ru.scadarnull.gui.table.renderer.MainTableCellRenderer;
 import ru.scadarnull.gui.table.renderer.TableHeaderIconRenderer;
@@ -9,15 +10,18 @@ import ru.scadarnull.settings.Style;
 import ru.scadarnull.settings.Text;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.Arrays;
 
 abstract public class TableData extends JTable implements Refresh {
+    private final TablePopUpMenu popUp;
     private final String[] columns;
     private final ImageIcon[] icons;
 
 
     protected TableData(MainTableModel model, String[] columns, ImageIcon[] icons) {
         super(model);
+        this.popUp = new TablePopUpMenu();
         this.icons = icons;
         this.columns = columns;
 
@@ -35,8 +39,18 @@ abstract public class TableData extends JTable implements Refresh {
         }
         MainTableCellRenderer renderer = new MainTableCellRenderer();
         setDefaultRenderer(String.class, renderer);
+        setComponentPopupMenu(popUp);
     }
 
+    @Override
+    public JPopupMenu getComponentPopupMenu(){
+        Point p = getMousePosition();
+        int row = rowAtPoint(p);
+        if(row != -1){
+            setRowSelectionInterval(row, row);
+        }
+        return super.getComponentPopupMenu();
+    }
 
 
     @Override

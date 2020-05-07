@@ -6,10 +6,13 @@ import ru.scadarnull.gui.table.TransferTableData;
 import ru.scadarnull.gui.toolbar.FunctionsTooBar;
 import ru.scadarnull.settings.Style;
 
+import javax.swing.*;
+
 public class TransferPanel extends RightPanel{
 
 
     public TransferPanel(MainFrame frame){
-        super(frame, new TransferTableData(), "TRANSFERS", Style.ICON_PANEL_TRANSFERS, new FunctionsTooBar());
+        super(frame, new TransferTableData(), "TRANSFERS", Style.ICON_PANEL_TRANSFERS,
+                new JPanel[]{new FunctionsTooBar(), new FilterPanel(frame)});
     }
 }
