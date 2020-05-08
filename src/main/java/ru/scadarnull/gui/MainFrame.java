@@ -56,7 +56,7 @@ public class MainFrame extends JFrame implements Refresh{
         setLocationRelativeTo(null);
     }
 
-    private void setRightPanel(RightPanel panel) {
+    public void setRightPanel(RightPanel panel) {
         if(rightPanel != null){
             remove(rightPanel);
         }

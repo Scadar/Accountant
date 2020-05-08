@@ -21,9 +21,6 @@ public class Main {
         init();
         MainFrame frame = new MainFrame();
         frame.setVisible(true);
-        SaveData sd = SaveData.getInstance();
-        //System.out.println(sd);
-        //testMode();
     }
 
     private static void testMode() throws ModelException {
@@ -108,7 +105,6 @@ public class Main {
         sd.setTransactionList(transactions);
         sd.save();
         //sd.load();
-        System.out.println(sd.toString());
     }
 
     private static void init(){
