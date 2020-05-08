@@ -951,25 +951,6 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>10000.0</startAmount>
-            <title>Кошель</title>
-        </account>
-        <amount>-272.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2020-05-03T07:34:13.111+04:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
             <startAmount>0.0</startAmount>
             <title>Карта Visa</title>
         </account>

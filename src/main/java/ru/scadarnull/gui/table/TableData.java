@@ -25,7 +25,7 @@ abstract public class TableData extends JTable implements Refresh {
     protected TableData(MainTableModel model, FunctionsHandler handler, String[] columns, ImageIcon[] icons) {
         super(model);
         this.handler = handler;
-        this.popUp = new TablePopUpMenu();
+        this.popUp = new TablePopUpMenu(handler);
         this.icons = icons;
         this.columns = columns;
 

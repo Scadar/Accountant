@@ -1,6 +1,7 @@
 package ru.scadarnull.gui;
 
 import ru.scadarnull.gui.handler.MainToolBarHandler;
+import ru.scadarnull.gui.handler.MainWindowHandler;
 import ru.scadarnull.gui.menu.MainMenu;
 import ru.scadarnull.gui.panel.*;
 import ru.scadarnull.gui.toolbar.MainToolBar;
@@ -22,7 +23,7 @@ public class MainFrame extends JFrame implements Refresh{
         super(Text.get("PROGRAM_NAME"));
 
         setResizable(false);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         setIconImage(Style.ICON_MAIN.getImage());
 
         mb = new MainMenu(this);
@@ -49,6 +50,8 @@ public class MainFrame extends JFrame implements Refresh{
 
         pack();
         setLocationRelativeTo(null);
+
+        addWindowListener(new MainWindowHandler());
     }
 
     public void setRightPanel(RightPanel panel) {
