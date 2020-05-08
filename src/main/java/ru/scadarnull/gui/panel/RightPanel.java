@@ -49,6 +49,10 @@ abstract public class RightPanel extends AbstractPanel{
         }
     }
 
+    public TableData getTableData() {
+        return td;
+    }
+
     private void enableEditDelete(){
         for(JPanel panel : panels){
             if(panel instanceof EnableEditDelete){

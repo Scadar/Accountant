@@ -2,6 +2,7 @@ package ru.scadarnull.gui.toolbar;
 
 import ru.scadarnull.gui.EnableEditDelete;
 import ru.scadarnull.gui.MainButton;
+import ru.scadarnull.gui.handler.Handler;
 import ru.scadarnull.settings.HandlerCode;
 import ru.scadarnull.settings.Style;
 import ru.scadarnull.settings.Text;
@@ -11,9 +12,8 @@ public final class FunctionsTooBar extends AbstractToolBar implements EnableEdit
     private MainButton editButton;
     private MainButton deleteButton;
 
-    public FunctionsTooBar() {
-        super();
-        setBorder(Style.BORDER_FUNCTIONS_TOOLBAR);
+    public FunctionsTooBar(Handler handler) {
+        super(Style.BORDER_FUNCTIONS_TOOLBAR, handler);
         init();
     }
 

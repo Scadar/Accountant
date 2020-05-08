@@ -1,5 +1,6 @@
 package ru.scadarnull.gui.table;
 
+import ru.scadarnull.gui.handler.FunctionsHandler;
 import ru.scadarnull.gui.table.model.ArticleTableModel;
 import ru.scadarnull.gui.table.model.CurrencyTableModel;
 import ru.scadarnull.gui.table.renderer.MainTableCellRenderer;
@@ -15,8 +16,8 @@ public class CurrencyTableData extends TableData {
     private static String[] columns = new String[]{"TITLE", "CODE", "RATE", "ON", "BASE"};
     private static final ImageIcon[] icons = new ImageIcon[]{Style.ICON_TITLE, Style.ICON_CODE,Style.ICON_RATE,Style.ICON_ON,Style.ICON_BASE};
 
-    public CurrencyTableData() {
-        super(new CurrencyTableModel(columns), columns, icons);
+    public CurrencyTableData(FunctionsHandler handler) {
+        super(new CurrencyTableModel(columns), handler, columns, icons);
         init();
     }
 

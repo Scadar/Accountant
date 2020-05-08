@@ -7,8 +7,7 @@ import ru.scadarnull.settings.Text;
 public final class MainToolBar extends AbstractToolBar{
 
     public MainToolBar() {
-        super();
-        setBorder(Style.BORDER_MAIN_TOOLBAR);
+        super(Style.BORDER_MAIN_TOOLBAR, null);
         init();
     }
 

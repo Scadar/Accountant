@@ -157,6 +157,10 @@ final public class Text {
         data.put("CHART_EXP", "Расходы");
 
 
+        data.put("CONFIRM_DELETE_TITLE", "Подтверждение удаления");
+        data.put("CONFIRM_DELETE_TEXT", "Вы уверены, что хотите удалить эту запись?");
+
+
         data.put("DIALOG_ABOUT_TITLE", "О программе");
         data.put("ABOUT", "<body style='font-size: 120%; width: 350px; text-align: center;'>" +
                 "<h1>Домашний кошель</h1>" +

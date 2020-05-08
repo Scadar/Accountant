@@ -1,5 +1,6 @@
 package ru.scadarnull.gui.table;
 
+import ru.scadarnull.gui.handler.FunctionsHandler;
 import ru.scadarnull.gui.table.model.TransactionTableModel;
 import ru.scadarnull.gui.table.model.TransferTableModel;
 import ru.scadarnull.gui.table.renderer.MainTableCellRenderer;
@@ -14,8 +15,8 @@ public class TransferTableData extends TableData {
     private static String[] columns = new String[]{"DATE", "FROM_ACCOUNT", "TO_ACCOUNT", "FROM_AMOUNT","TO_AMOUNT", "NOTICE"};
     private static final ImageIcon[] icons = new ImageIcon[]{Style.ICON_DATE, Style.ICON_ACCOUNT, Style.ICON_ACCOUNT, Style.ICON_AMOUNT, Style.ICON_AMOUNT, Style.ICON_NOTICE};
 
-    public TransferTableData() {
-        super(new TransferTableModel(columns), columns, icons);
+    public TransferTableData(FunctionsHandler handler) {
+        super(new TransferTableModel(columns), handler, columns, icons);
         init();
     }
 
