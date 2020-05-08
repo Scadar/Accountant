@@ -29,6 +29,9 @@ public class Currency extends Common{
         this.rate = rate;
         this.isOn = isOn;
         this.isBase = isBase;
+        if(this.isBase){
+            this.isOn = true;
+        }
     }
 
     @Override
@@ -115,6 +118,21 @@ public class Currency extends Common{
         for(Account a : sd.getAccountList()){
             if(a.getCurrency().equals(sd.getOldCommon())){
                 a.setCurrency(this);
+            }
+
+            for(Transaction t : sd.getTransactionList()){
+                if(t.getAccount().getCurrency().equals(sd.getOldCommon())){
+                    t.getAccount().setCurrency(this);
+                }
+            }
+
+            for(Transfer t : sd.getTransferList()){
+                if(t.getFromAccount().getCurrency().equals(sd.getOldCommon())){
+                    t.getFromAccount().setCurrency(this);
+                }
+                if(t.getToAccount().getCurrency().equals(sd.getOldCommon())){
+                    t.getToAccount().setCurrency(this);
+                }
             }
         }
     }
