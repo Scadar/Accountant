@@ -1,13 +1,14 @@
 package ru.scadarnull.gui.toolbar;
 
+import ru.scadarnull.gui.handler.MainToolBarHandler;
 import ru.scadarnull.settings.HandlerCode;
 import ru.scadarnull.settings.Style;
 import ru.scadarnull.settings.Text;
 
 public final class MainToolBar extends AbstractToolBar{
 
-    public MainToolBar() {
-        super(Style.BORDER_MAIN_TOOLBAR, null);
+    public MainToolBar(MainToolBarHandler handler) {
+        super(Style.BORDER_MAIN_TOOLBAR, handler);
         init();
     }
 

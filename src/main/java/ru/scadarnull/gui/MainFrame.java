@@ -1,5 +1,6 @@
 package ru.scadarnull.gui;
 
+import ru.scadarnull.gui.handler.MainToolBarHandler;
 import ru.scadarnull.gui.menu.MainMenu;
 import ru.scadarnull.gui.panel.*;
 import ru.scadarnull.gui.toolbar.MainToolBar;
@@ -20,12 +21,6 @@ public class MainFrame extends JFrame implements Refresh{
     public MainFrame() throws HeadlessException {
         super(Text.get("PROGRAM_NAME"));
 
-        //////////////
-        /*CurrencyAddEditDialog temp = new CurrencyAddEditDialog(this);
-        temp.setCommon(SaveData.getInstance().getBaseCurrency());
-        temp.showDialog();*/
-
-        //////////////
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setIconImage(Style.ICON_MAIN.getImage());
@@ -40,7 +35,7 @@ public class MainFrame extends JFrame implements Refresh{
         constraints.gridy = 0;
         constraints.gridwidth = 2;
 
-        toolBar = new MainToolBar();
+        toolBar = new MainToolBar(new MainToolBarHandler(this));
         add(toolBar, constraints);
 
         constraints.gridy = 1;
