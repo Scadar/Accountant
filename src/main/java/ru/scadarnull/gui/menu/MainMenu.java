@@ -4,6 +4,7 @@ import ru.scadarnull.gui.EnableEditDelete;
 import ru.scadarnull.gui.MainFrame;
 import ru.scadarnull.gui.Refresh;
 import ru.scadarnull.gui.handler.Handler;
+import ru.scadarnull.gui.handler.MenuEditHandler;
 import ru.scadarnull.gui.handler.MenuFileHandler;
 import ru.scadarnull.settings.HandlerCode;
 import ru.scadarnull.settings.Style;
@@ -42,7 +43,7 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
         add(help);
 
         MenuFileHandler fileHandler = new MenuFileHandler(frame);
-        MenuFileHandler editHandler = new MenuFileHandler(frame);
+        MenuEditHandler editHandler = new MenuEditHandler(frame);
         MenuFileHandler viewHandler = new MenuFileHandler(frame);
         MenuFileHandler helpHandler = new MenuFileHandler(frame);
 

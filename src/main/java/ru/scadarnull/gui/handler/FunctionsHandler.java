@@ -40,11 +40,11 @@ public class FunctionsHandler extends Handler implements MouseListener, KeyListe
         super.actionPerformed(e);
     }
 
-    private void add() {
+    public void add() {
         showAddEditDialog(null);
     }
 
-    private void edit() {
+    public void edit() {
         showAddEditDialog(getSelectedCommon());
     }
 
@@ -59,7 +59,7 @@ public class FunctionsHandler extends Handler implements MouseListener, KeyListe
         dialog.showDialog();
     }
 
-    private void delete() {
+    public void delete() {
         Common common = getSelectedCommon();
         if(common != null){
             int result = ConfirmDialog.show(frame, "CONFIRM_DELETE_TEXT", "CONFIRM_DELETE_TITLE");
