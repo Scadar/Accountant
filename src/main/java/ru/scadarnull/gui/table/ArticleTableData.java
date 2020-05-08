@@ -1,7 +1,6 @@
 package ru.scadarnull.gui.table;
 
 import ru.scadarnull.gui.handler.FunctionsHandler;
-import ru.scadarnull.gui.table.model.AccountTableModel;
 import ru.scadarnull.gui.table.model.ArticleTableModel;
 import ru.scadarnull.settings.Style;
 

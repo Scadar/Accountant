@@ -8,7 +8,6 @@ import ru.scadarnull.settings.Style;
 
 import javax.swing.*;
 import java.util.Date;
-import java.util.Properties;
 
 public class MainDatePicker {
     private final JDatePickerImpl datePicker;

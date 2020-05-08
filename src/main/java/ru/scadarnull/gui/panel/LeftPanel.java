@@ -10,7 +10,6 @@ import ru.scadarnull.settings.Text;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 public final class LeftPanel extends AbstractPanel{
 

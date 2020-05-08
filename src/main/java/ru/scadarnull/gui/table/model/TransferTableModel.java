@@ -1,6 +1,5 @@
 package ru.scadarnull.gui.table.model;
 
-import ru.scadarnull.model.Transaction;
 import ru.scadarnull.model.Transfer;
 import ru.scadarnull.saveload.SaveData;
 import ru.scadarnull.settings.Format;

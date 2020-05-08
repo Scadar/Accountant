@@ -1,7 +1,6 @@
 package ru.scadarnull.gui.table;
 
 import ru.scadarnull.gui.handler.FunctionsHandler;
-import ru.scadarnull.gui.table.model.TransactionTableModel;
 import ru.scadarnull.gui.table.model.TransferTableModel;
 import ru.scadarnull.gui.table.renderer.MainTableCellRenderer;
 import ru.scadarnull.settings.Style;

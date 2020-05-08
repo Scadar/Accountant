@@ -6,7 +6,6 @@ import ru.scadarnull.gui.handler.Handler;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import java.awt.font.ImageGraphicAttribute;
 
 abstract public class AbstractToolBar extends JPanel implements Refresh {
     private final Handler handler;

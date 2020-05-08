@@ -8,7 +8,6 @@ import ru.scadarnull.gui.dialog.ErrorDialog;
 import ru.scadarnull.saveload.SaveData;
 import ru.scadarnull.settings.HandlerCode;
 import ru.scadarnull.settings.Settings;
-import ru.scadarnull.settings.Text;
 
 import javax.swing.*;
 import javax.xml.parsers.ParserConfigurationException;

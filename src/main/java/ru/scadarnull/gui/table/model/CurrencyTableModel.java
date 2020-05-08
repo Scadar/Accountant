@@ -1,11 +1,9 @@
 package ru.scadarnull.gui.table.model;
 
-import ru.scadarnull.model.Article;
 import ru.scadarnull.model.Currency;
 import ru.scadarnull.saveload.SaveData;
 import ru.scadarnull.settings.Format;
 
-import javax.persistence.criteria.From;
 
 public class CurrencyTableModel extends MainTableModel {
 

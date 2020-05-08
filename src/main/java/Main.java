@@ -3,18 +3,13 @@ import ru.scadarnull.exception.ModelException;
 import ru.scadarnull.gui.MainFrame;
 import ru.scadarnull.model.*;
 import ru.scadarnull.saveload.SaveData;
-import ru.scadarnull.settings.Format;
 import ru.scadarnull.settings.Settings;
 import ru.scadarnull.settings.Text;
 
 import javax.xml.parsers.ParserConfigurationException;
-import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) throws ModelException, IOException, SAXException, ParserConfigurationException {

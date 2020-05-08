@@ -1,7 +1,6 @@
 package ru.scadarnull.gui.handler;
 
 import ru.scadarnull.gui.MainFrame;
-import ru.scadarnull.gui.panel.*;
 import ru.scadarnull.settings.HandlerCode;
 
 import java.awt.event.ActionEvent;

@@ -11,7 +11,6 @@ import ru.scadarnull.settings.Text;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.time.temporal.Temporal;
 
 public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
 

@@ -1,6 +1,5 @@
 package ru.scadarnull.exception;
 
-import ru.scadarnull.settings.Text;
 
 public class ModelException extends Exception {
 

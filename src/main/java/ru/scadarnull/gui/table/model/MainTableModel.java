@@ -2,7 +2,6 @@ package ru.scadarnull.gui.table.model;
 
 import ru.scadarnull.gui.Refresh;
 import ru.scadarnull.model.Common;
-import ru.scadarnull.saveload.SaveData;
 import ru.scadarnull.settings.Text;
 
 import javax.swing.table.AbstractTableModel;

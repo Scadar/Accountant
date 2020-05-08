@@ -5,7 +5,6 @@ import ru.scadarnull.gui.panel.*;
 import ru.scadarnull.settings.HandlerCode;
 
 import java.awt.event.ActionEvent;
-import java.awt.geom.Arc2D;
 
 public class MenuViewHandler extends Handler {
 

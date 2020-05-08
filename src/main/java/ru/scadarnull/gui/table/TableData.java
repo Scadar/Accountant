@@ -1,9 +1,7 @@
 package ru.scadarnull.gui.table;
 
-import ru.scadarnull.gui.MainFrame;
 import ru.scadarnull.gui.Refresh;
 import ru.scadarnull.gui.handler.FunctionsHandler;
-import ru.scadarnull.gui.handler.Handler;
 import ru.scadarnull.gui.menu.TablePopUpMenu;
 import ru.scadarnull.gui.table.model.MainTableModel;
 import ru.scadarnull.gui.table.renderer.MainTableCellRenderer;

@@ -3,7 +3,6 @@ package ru.scadarnull.model;
 import ru.scadarnull.exception.ModelException;
 import ru.scadarnull.saveload.SaveData;
 
-import javax.sql.DataSource;
 import java.util.Date;
 
 public class Transaction extends Common {

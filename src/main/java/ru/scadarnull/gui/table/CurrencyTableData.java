@@ -1,7 +1,6 @@
 package ru.scadarnull.gui.table;
 
 import ru.scadarnull.gui.handler.FunctionsHandler;
-import ru.scadarnull.gui.table.model.ArticleTableModel;
 import ru.scadarnull.gui.table.model.CurrencyTableModel;
 import ru.scadarnull.gui.table.renderer.MainTableCellRenderer;
 import ru.scadarnull.model.Currency;

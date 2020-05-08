@@ -1,9 +1,7 @@
 package ru.scadarnull.gui.table.model;
 
-import ru.scadarnull.model.Account;
 import ru.scadarnull.model.Article;
 import ru.scadarnull.saveload.SaveData;
-import ru.scadarnull.settings.Format;
 
 public class ArticleTableModel extends MainTableModel {
 

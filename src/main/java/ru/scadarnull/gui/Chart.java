@@ -11,7 +11,6 @@ import ru.scadarnull.settings.Text;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.HashMap;
 import java.util.Map;
 
 public final class Chart {

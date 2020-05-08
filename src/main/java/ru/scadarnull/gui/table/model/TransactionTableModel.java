@@ -4,11 +4,6 @@ import ru.scadarnull.model.Transaction;
 import ru.scadarnull.saveload.SaveData;
 import ru.scadarnull.settings.Format;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class TransactionTableModel extends MainTableModel {
 
     private static final int DATE = 0;

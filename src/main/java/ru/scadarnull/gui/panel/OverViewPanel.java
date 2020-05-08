@@ -1,7 +1,6 @@
 package ru.scadarnull.gui.panel;
 
 import ru.scadarnull.gui.MainFrame;
-import ru.scadarnull.gui.dialog.AccountAddEditDialog;
 import ru.scadarnull.gui.dialog.TransactionAddEditDialog;
 import ru.scadarnull.gui.handler.FunctionsHandler;
 import ru.scadarnull.gui.table.TransactionTableData;

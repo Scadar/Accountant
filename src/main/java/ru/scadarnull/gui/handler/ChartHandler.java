@@ -2,7 +2,6 @@ package ru.scadarnull.gui.handler;
 
 import ru.scadarnull.gui.MainFrame;
 import ru.scadarnull.gui.panel.StatisticsPanel;
-import ru.scadarnull.saveload.SaveData;
 import ru.scadarnull.settings.HandlerCode;
 
 import java.awt.event.ActionEvent;

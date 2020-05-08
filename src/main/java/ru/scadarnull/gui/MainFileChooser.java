@@ -5,7 +5,6 @@ import ru.scadarnull.settings.Text;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.net.FileNameMap;
 
 public class MainFileChooser extends JFileChooser {
 
