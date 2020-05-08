@@ -31,6 +31,21 @@ public class SaveData {
 
     public void load() {
         SaveLoad.load(this);
+        if(articleList == null){
+            articleList = new ArrayList<>();
+        }
+        if(accountList == null){
+            accountList = new ArrayList<>();
+        }
+        if(currencyList == null){
+            currencyList = new ArrayList<>();
+        }
+        if(transactionList == null){
+            transactionList = new ArrayList<>();
+        }
+        if(transferList == null){
+            transferList = new ArrayList<>();
+        }
         sort();
         for(Account account : accountList){
             account.setAmountFromTransactionsAndTransfer(transactionList, transferList);
@@ -110,23 +125,28 @@ public class SaveData {
     }
 
     public void setArticleList(List<Article> articleList) {
-        this.articleList = articleList;
+        if(articleList != null)
+            this.articleList = articleList;
     }
 
     public void setCurrencyList(List<Currency> currencyList) {
-        this.currencyList = currencyList;
+        if(currencyList != null)
+            this.currencyList = currencyList;
     }
 
     public void setAccountList(List<Account> accountList) {
-        this.accountList = accountList;
+        if(accountList != null)
+            this.accountList = accountList;
     }
 
     public void setTransactionList(List<Transaction> transactionList) {
-        this.transactionList = transactionList;
+        if(transactionList != null)
+            this.transactionList = transactionList;
     }
 
     public void setTransferList(List<Transfer> transferList) {
-        this.transferList = transferList;
+        if(transferList != null)
+            this.transferList = transferList;
     }
 
     public List<Currency> getEnableCurrencies(){
@@ -165,6 +185,14 @@ public class SaveData {
 
     public Common getOldCommon() {
         return oldCommon;
+    }
+
+    public void clear(){
+        articleList.clear();
+        accountList.clear();
+        transactionList.clear();
+        transferList.clear();
+        currencyList.clear();
     }
 
     public void add(Common c) throws ModelException {
@@ -232,6 +260,7 @@ public class SaveData {
         for(Account a: accountList){
                 a.getCurrency().setRate(rates.get(a.getCurrency().getCode()));
         }
+        isSave = false;
     }
 }
 

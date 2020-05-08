@@ -15,6 +15,6 @@ abstract public class Handler implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        frame.refresh();
     }
 }
