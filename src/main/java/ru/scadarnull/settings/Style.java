@@ -30,12 +30,13 @@ public class Style {
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10,10,10);
     public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5,5,5);
     public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10,10,10);
-    public static final EmptyBorder BORDER_FILTER_PANEl = new EmptyBorder(0, 0,7,0);
+    public static final EmptyBorder BORDER_FILTER_PANEl = new EmptyBorder(5, 0,7,0);
 
     public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
     public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
     public static final Dimension DIMENSION_PADDING_BALANCE = new Dimension(10, 0);
     public static final Dimension DIMENSION_TABLE_SHOW_SIZE = new Dimension(850, 450);
+    public static final Dimension DIMENSION_CHART = new Dimension(1068, 450);
 
     public static final int PADDING_DIALOG = 10;
     public static final int PADDING_BALANCE = 4;
@@ -111,10 +112,12 @@ public class Style {
     public static final ImageIcon ICON_PANEL_ARTICLES = new ImageIcon("images/articles_panel.png");
     public static final ImageIcon ICON_PANEL_TRANSFERS = new ImageIcon("images/transfers_panel.png");
     public static final ImageIcon ICON_PANEL_CURRENCIES = new ImageIcon("images/currencies_panel.png");
+    public static final ImageIcon ICON_PANEL_STATISTICS = new ImageIcon("images/statistics_panel.png");
 
 
     public static final ImageIcon ICON_LEFT = new ImageIcon("images/left.png");
     public static final ImageIcon ICON_RIGHT = new ImageIcon("images/right.png");
+
 
 
 }

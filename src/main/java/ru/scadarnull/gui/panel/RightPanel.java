@@ -101,4 +101,8 @@ abstract public class RightPanel extends AbstractPanel{
             add(scrollPane);
         }
     }
+
+    protected void setPanels(JPanel[] panels){
+        this.panels = panels;
+    }
 }

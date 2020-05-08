@@ -146,6 +146,12 @@ final public class Text {
         data.put("ON", "Включено");
         data.put("BASE", "Базовая");
 
+        data.put("CHART_NO_DATA", "Нет данных за выбранный период");
+
+        data.put("STATISTICS", "Статистика");
+        data.put("CHART_INCOME", "Доходы");
+        data.put("CHART_EXP", "Расходы");
+
 
         data.put("DIALOG_ABOUT_TITLE", "О программе");
         data.put("ABOUT", "<body style='font-size: 120%; width: 350px; text-align: center;'>" +
